@@ -1,0 +1,939 @@
+/*autoprefixer grid: autoplace*/
+
+$HeadersFontFamily: 'Montserrat', sans-serif;
+$TextFontFamily: 'Lora', serif;
+
+@media only screen and (max-width: 960px) {
+  .mainPageDesktop {
+    display: none;
+  }
+  .mainPageMobile {
+    font-style: normal;
+    display: inline-block;
+    width: 100%;
+  }
+  .bannerMobile {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-size: cover !important;
+    background: url("../img/banner_mobile.jpg") center;
+  }
+  .boldLine {
+    margin: 0;
+    border: none;
+    height: 3px;
+    padding: 0;
+    background: #010066;
+  }
+  .line {
+    width: 90%;
+    border: none;
+    height: 1px;
+    margin: 0 auto;
+    padding: 0;
+    background: #010066;
+  }
+  .button {
+    font-family: $HeadersFontFamily;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.5s all;
+    font-weight: 900;
+    font-size: x-large;
+    text-decoration: none;
+    color: #010066;
+  }
+  .button:hover {
+    text-shadow: 0 0 5px rgba(150, 150, 150, 1);
+  }
+  .content {
+    z-index: 1;
+    background: white;
+    padding: 50px;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+    min-width: inherit;
+    width: 100%;
+  }
+  .sprayer {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 250px;
+    width: auto;
+  }
+  .whyus {
+    ul {
+      li {
+        font-family: $TextFontFamily;
+        text-align: center;
+        font-weight: bolder;
+        padding: 5px 10px;
+      }
+
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      list-style-type: none;
+    }
+  }
+  .callUsBlock {
+    margin-top: 50px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+    a {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      vertical-align: center;
+      font-family: $HeadersFontFamily;
+      font-size: x-large;
+      text-decoration: none;
+      color: #000030;
+    }
+  }
+  .services {
+    height: auto;
+  }
+  .servicesBlock {
+    ul {
+      font-size: 18px;
+      line-height: 2.1;
+      text-align: left;
+    }
+
+    div {
+      text-align: center;
+
+      p {
+        font-family: $HeadersFontFamily;
+        font-weight: bold;
+        width: auto;
+        height: auto;
+        padding: 40px 0;
+        margin: 0;
+        color: white;
+        font-size: 24px;
+      }
+
+      width: 100%;
+      height: 130px;
+      padding: 0;
+      margin: 0;
+      background: #000030;
+    }
+
+    img {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .button {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 30px;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 2.1;
+    }
+
+    .button:hover {
+      text-shadow: none;
+    }
+
+    text-align: right;
+    margin: 20px 10px 40px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 48, 0.1);
+    box-shadow: 6px 6px 21px 0 rgba(0, 0, 0, 0.75);
+    background: white;
+  }
+  .reviewsList {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+  }
+  .headline {
+    margin-top: 50px;
+
+    p {
+      padding: 0 10px;
+    }
+
+    padding-bottom: 20px;
+
+    z-index: 235;
+    box-shadow: 0 31px 41px -33px rgba(0, 0, 0, 0.74);
+  }
+  .reviewsClose {
+    width: 100%;
+    height: 400px;
+    color: #575757;
+
+    p {
+      padding-top: 20px;
+      font-size: x-large;
+      margin: 20px;
+      font-weight: bolder;
+      color: #575757;
+    }
+
+    .form {
+      width: auto;
+      color: #575757;
+      margin: 20px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      p {
+        display: block;
+        margin: 0;
+      }
+
+      input {
+        display: block;
+        margin: auto auto;
+        font-family: $HeadersFontFamily;
+        padding: 6px;
+        font-style: normal;
+        background: white;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #575757;
+        height: 20px;
+        width: 95%;
+      }
+
+      textarea {
+        display: block;
+        font-family: $HeadersFontFamily;
+        padding: 6px;
+        font-style: normal;
+        background: white;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 10px auto;
+        color: #575757;
+        height: 120px;
+        width: 95%;
+        resize: none;
+      }
+
+      button {
+        display: block;
+        margin: 10px auto;
+        transition: 0.5s all;
+        width: 100px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 150% !important;
+        grid-area: send;
+        background: none;
+        height: 40px;
+      }
+
+      button:hover {
+        color: white;
+        background: #010066;
+        box-shadow: 0 0 81px -33px rgba(0, 0, 0, 0.74);
+      }
+
+      input:focus, textarea:focus {
+        outline: none;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    box-shadow: 0 -31px 41px -33px rgba(0, 0, 0, 0.74);
+    z-index: 234;
+  }
+  .followUsBlock {
+    margin: 70px 20px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'discp tw' 'discp fb' 'discp inst';
+
+    img {
+      width: 80px;
+    }
+
+    a {
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    h2 {
+      padding-left: 70px;
+    }
+  }
+  .stars {
+    text-align: center;
+    font-size: 250%;
+  }
+  .review {
+    border-radius: 5px;
+    border: 1px solid rgba(1, 0, 102, 0.2);
+    margin: 15px auto;
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 'name rate' 'rev rev' '. date';
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 40px auto 40px;
+    z-index: -99;
+
+
+    .revData {
+      margin-left: auto;
+      margin-right: 0;
+      padding-right: 30px;
+      grid-area: date;
+    }
+
+    p {
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0;
+      font-size: medium;
+    }
+
+    .stars {
+      padding-top: 10px;
+      padding-right: 30px;
+      grid-area: rate;
+      font-size: 150%;
+    }
+  }
+
+  ul {
+    li {
+      font-family: $TextFontFamily;
+      text-align: left;
+      font-weight: bolder;
+      padding: 5px 10px;
+    }
+  }
+  h3 {
+    text-align: center;
+    font-family: $HeadersFontFamily;
+    font-size: 24px;
+    font-weight: normal;
+    color: #787878;
+  }
+  h2 {
+    font-family: $HeadersFontFamily;
+    color: #010066;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: $TextFontFamily;
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .mainPageMobile {
+    display: none;
+  }
+  .mainPageDesktop {
+    width: 100%;
+  }
+  .banner {
+    position: relative;
+    background-size: cover;
+    background: url("../img/city_header.jpg") bottom left;
+    width: 100%;
+    height: 640px;
+
+    h1 {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      margin-top: 100px;
+      margin-right: 45%;
+      padding: 10px 50px;
+      font-size: calc(2em + 1vw);
+    }
+
+    h2 {
+      margin-top: 400px;
+      margin-right: 50%;
+      margin-left: 60px;
+      font-size: calc(1.7em + 1vw);
+    }
+
+    h3 {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      bottom: 0;
+      margin-bottom: 100px;
+      margin-right: 45%;
+      padding: 10px 50px;
+      font-size: calc(1.5em + 1vw);
+    }
+
+    h3:hover {
+      cursor: pointer;
+    }
+
+    h1, h2, h3 {
+      position: absolute;
+      animation-name: fadeInLeft;
+
+      animation-duration: 2s;
+
+      animation-timing-function: ease-in-out;
+    }
+
+    img {
+      z-index: 0;
+      height: 90%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 50px;
+
+      animation-name: fadeInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+    }
+  }
+  .boldLine {
+    margin: 0;
+    border: none;
+    height: 3px;
+    padding: 0;
+    background: #010066;
+  }
+  .line {
+    width: 90%;
+    border: none;
+    height: 1px;
+    margin: 0 auto;
+    padding: 0;
+    background: #010066;
+  }
+  .button {
+    font-family: $HeadersFontFamily;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.5s all;
+    font-weight: 900;
+    font-size: x-large;
+    text-decoration: none;
+    color: #010066;
+  }
+  .button:hover {
+    text-shadow: 0 0 5px rgba(150, 150, 150, 1);
+  }
+  .content {
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+
+    h2 {
+      color: #010066;
+      margin-left: 5%;
+      font-size: calc(1.7em + 1vw);
+      width: auto;
+    }
+  }
+  .sprayer {
+    position: relative;
+    height: auto;
+
+    table {
+      font-family: $TextFontFamily;
+      line-height: 2;
+      font-size: 22px;
+      text-align: left;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 700px;
+
+      th {
+        font-family: $HeadersFontFamily;
+        text-align: center;
+      }
+
+      img {
+        height: 300px;
+        bottom: 0;
+      }
+    }
+
+    p {
+      text-align: center;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+  .entryCoronaBlock {
+    display: flex;
+    margin-top: 80px;
+
+    .startCovidBlock {
+      box-shadow: 19px 0 15px -4px rgba(0,0,0,0.75);
+      height: auto;
+      width: 60%;
+      text-align: center;
+      background: #B10D0C;
+
+      h2 {
+        color: white !important;
+      }
+      z-index: 1;
+    }
+
+    .covidTxt {
+      width: 30%;
+      height: auto;
+      text-align: center;
+
+      h2 {
+        color: #B10D0C !important;
+      }
+      z-index: -1;
+    }
+
+    .endCovidBlock {
+      z-index: 1;
+      box-shadow: -19px 0 15px -4px rgba(0,0,0,0.75);
+      margin: 0;
+      padding: 0;
+      background: #B10D0C;
+      height: auto;
+      width: 10%;
+    }
+
+    h2 {
+      display: inline-block;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin: 0;
+      font-size: calc(2em + 1vw);
+    }
+
+    height:auto;
+  }
+  .coronaEntryInfo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h3 {
+      padding-right: 20px;
+      padding-left: 20px;
+      text-align: center;
+      font-size: calc(1.5em + 1vw);
+      color: #818181;
+      font-family: $HeadersFontFamily;
+    }
+    p {
+      text-align: center;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+  .coronaInfoTable {
+      table {
+        margin-right: auto;
+        margin-left: auto;
+        width: 900px;
+        text-align: center;
+        th {
+          text-align: center;
+          font-family: $HeadersFontFamily;
+          font-size: calc(0.5em + 1vw);
+          color:  #818181;
+        }
+        ul {
+          margin-right: 20px;
+          font-size: calc(0.5em + 1vw);
+          font-family: $TextFontFamily;
+          text-align: left;
+        }
+
+        .callUsButton, .knowMoreButton {
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: calc(1em + 1vw);
+          display: block;
+          text-decoration: none;
+          font-family: $HeadersFontFamily;
+        }
+
+        .callUsButton {
+          margin-bottom: 7px;
+
+          background: #B10D0C;
+          width: 80%;
+          border: 3px solid #870d0d;
+          border-radius: 10px;
+          color: white;
+          font-weight: 800;
+        }
+
+        .knowMoreButton {
+          margin-top: 7px;
+          background: white;
+          color: #B10D0C;
+          font-weight: normal !important;
+          width: 80%;
+          border-radius: 10px;
+          border: 3px solid  #B10D0C;
+        }
+      }
+  }
+  .servecesHeadline {
+    text-align: right;
+    h2 {
+      margin-right: 5%;
+    }
+  }
+  .services {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    height: auto;
+    width: 960px;
+  }
+  .servicesBlock {
+    ul {
+      font-size: 17px;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    div {
+      text-align: center;
+
+      p {
+        font-family: $HeadersFontFamily;
+        font-weight: bold;
+        width: auto;
+        height: auto;
+        padding: 40px 0;
+        margin: 0;
+        color: white;
+        font-size: 24px;
+      }
+
+      width: 100%;
+      height: 130px;
+      padding: 0;
+      margin: 0;
+      background: #000030;
+    }
+
+    img {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .button {
+      margin: 0;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 2.1;
+    }
+
+    .button:hover {
+      text-shadow: none;
+    }
+
+    width: 300px;
+    margin: 50px 10px;
+    transition: 0.3s all;
+    text-align: right;
+    height: auto;
+    border: 1px solid rgba(0, 0, 48, 0.1);
+    background: white;
+  }
+  .servicesBlock:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 21px 0 rgba(0, 0, 0, 0.75);
+  }
+  .callUsBlock {
+    width: 660px;
+    display: flex;
+    height: 100px;
+    margin: 50px auto 70px;
+    text-align: left;
+
+    img {
+      margin-left: 70px;
+      height: 100%;
+    }
+    h2 {
+      font-size: 40px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .phoneBlock {
+    margin: 50px 0;
+    text-align: center;
+    a {
+      vertical-align: middle;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: $HeadersFontFamily;
+      font-size: calc(1.7em + 1vw);
+      color: #010066;
+    }
+  }
+  .reviewsList {
+    transition: 1s all;
+    height: 365px;
+    overflow-y: auto;
+  }
+  .reviewsList:empty:hover {
+    height: 365px;
+  }
+  .reviewsList:empty:after {
+    text-align: center;
+    content: url("../img/reviewError.jpg");
+    position: relative;
+    display: block;
+    width: auto;
+    margin-top: 100px;
+  }
+  .reviewsList:hover {
+    height: 500px;
+  }
+  .headline {
+    text-align: center;
+    h2 {
+      margin: 0;
+      padding: 0;
+      width: auto;
+    }
+
+    p {
+      padding: 0 10px;
+    }
+
+    padding-bottom: 20px;
+    box-shadow: 0 31px 41px -33px rgba(0, 0, 0, 0.74);
+
+    z-index: 235;
+  }
+  .reviewsClose {
+    height: auto;
+    text-align: center;
+    box-shadow: 0 -31px 41px -33px rgba(0, 0, 0, 0.74);
+
+    color: #575757;
+
+    p {
+      font-size: 200%;
+      margin: 20px;
+      padding-top: 30px;
+      color: #575757;
+    }
+
+    .form {
+      display: inline-block;
+      margin-right: 0;
+      margin-left: 0;
+      width: 80%;
+      color: #575757;
+      padding: 25px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+
+      .f1 {
+        display: flex;
+        input {
+          font-family: $HeadersFontFamily;
+          padding: 10px;
+          font-style: normal;
+          background: white;
+          border-radius: 8px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          color: #575757;
+          height: 30px;
+          font-size: x-large;
+          width: 50%;
+          margin-right: 30px;
+          grid-area: name;
+        }
+        .starsWrapper {
+          width: 50%;
+          text-align: right;
+
+          p {
+            margin: 0;
+            vertical-align: middle;
+            padding: 0 30px 0 0;
+            display: inline-block;
+          }
+        }
+      }
+
+      textarea {
+        font-family: $HeadersFontFamily;
+        display: block;
+        padding: 10px;
+        width: 95%;
+        font-style: normal;
+
+        background: white;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+        color: #575757;
+        height: 120px;
+        font-size: x-large;
+        grid-area: rw;
+        resize: none;
+      }
+
+      button {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: 0;
+        transition: 0.5s all;
+        width: 100px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 150% !important;
+        grid-area: send;
+        background: none;
+        height: 40px;
+      }
+
+      button:hover {
+        color: white;
+        background: #010066;
+        box-shadow: 0 0 81px -33px rgba(0, 0, 0, 0.74);
+      }
+
+      input:focus, textarea:focus {
+        outline: none;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    z-index: 234;
+  }
+  .followUsBlock {
+    text-align: center;
+    margin: 70px 20px;
+
+    img {
+      display: inline-block;
+      width: 80px;
+    }
+
+    a {
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    h2 {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .stars {
+    padding-bottom: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: calc(1.7em + 1vw);
+  }
+  .review {
+    border-radius: 5px;
+    border: 1px solid rgba(1, 0, 102, 0.2);
+    margin: 15px auto;
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 'name rate' 'rev rev' '. date';
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 40px auto 40px;
+    z-index: -99;
+
+
+    .revData {
+      margin-left: auto;
+      margin-right: 0;
+      padding-right: 30px;
+      grid-area: date;
+    }
+
+    p {
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0;
+      font-size: medium;
+    }
+
+    .stars {
+      padding-top: 10px;
+      padding-right: 30px;
+      grid-area: rate;
+      font-size: 150%;
+    }
+  }
+  p {
+    font-family: $TextFontFamily;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+  }
+  h1, h2, h3 {
+    font-family: $HeadersFontFamily;
+    font-weight: 700;
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+

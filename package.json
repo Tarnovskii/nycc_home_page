@@ -6,9 +6,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "animate.css": "^3.7.2",
+    "axios": "^0.19.2",
+    "postcss-unprefix": "^2.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-scroll-parallax": "^2.3.2",
+    "react-sidebar-styled": "0.0.1",
+    "react-star-rating-component": "^1.4.1",
+    "react-star-ratings": "^2.3.0",
+    "reactrix-sidebar": "0.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,14 +29,16 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "since 2009"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "since 2009"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "autoprefixer": "^9.7.6",
+    "cross-env": "^7.0.2",
+    "react-animate-on-scroll": "^2.1.5"
   }
 }
