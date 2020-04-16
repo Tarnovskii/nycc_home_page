@@ -1,0 +1,143 @@
+@media only screen and (max-width: 960px) {
+  .footerDesktop {
+    display: none;
+  }
+
+  .footerMobile {
+    text-align: left;
+    font-family: "Montserrat", sans-serif !important;
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    background: #010066;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "links soc" "pe pe";
+    grid-template-rows: auto auto;
+  }
+
+  .links {
+    margin: 50px 50px;
+    grid-area: links;
+  }
+  .links a {
+    display: block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .email {
+    grid-area: pe;
+  }
+  .email p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: x-large;
+  }
+  .email a {
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .social {
+    text-align: right;
+    right: 0;
+    margin: 50px 50px;
+    grid-area: soc;
+  }
+  .social p {
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+  }
+  .social a {
+    height: 50px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+  }
+  .social img {
+    transition: 0.5s all;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .footerMobile {
+    display: none;
+  }
+
+  .footerDesktop {
+    font-family: "Montserrat", sans-serif !important;
+    width: 100%;
+    height: 300px;
+    background: #010066;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "hl sn ph";
+  }
+
+  .links {
+    margin: auto auto;
+    grid-area: hl;
+  }
+  .links a {
+    display: block;
+    padding-bottom: 5px;
+    padding-left: 70px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .social {
+    text-align: center;
+    margin: auto auto;
+    grid-area: sn;
+  }
+  .social p {
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+  }
+  .social a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+  }
+  .social img {
+    transition: 0.5s all;
+    width: 80px;
+  }
+
+  .footerPhone {
+    margin: auto auto;
+    grid-area: ph;
+  }
+  .footerPhone a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+}
+
+/*# sourceMappingURL=footer.module.css.map */
